@@ -9,7 +9,7 @@ const SoybeanAvatar = ({ className, ...props }: React.ComponentProps<'div'>) => 
       className={clsx('size-72px  overflow-hidden rd-1/2', className)}
     >
       <img
-        className="size-full"
+        className="w-full h-full"
         src={soybeanAvatar}
       />
     </div>

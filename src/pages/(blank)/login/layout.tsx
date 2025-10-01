@@ -30,7 +30,7 @@ const LoginLayout = () => {
 
   return (
     <div
-      className="relative size-full flex items-center justify-center overflow-hidden bg-layout"
+      className="relative w-full h-full flex items-center justify-center overflow-hidden bg-layout"
       style={{ backgroundColor: bgColor }}
     >
       <WaveBg themeColor={bgThemeColor} />
@@ -39,7 +39,7 @@ const LoginLayout = () => {
         className="relative z-40 w-auto rounded-3xl"
         variant="borderless"
       >
-        <div className="w-100 sm:w-75">
+        <div className="w-[100%] sm:w-[75%]">
           <Header />
           <main className="pt-6">
             <Outlet />

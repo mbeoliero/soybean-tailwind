@@ -12,7 +12,7 @@ const ErrorPage = ({ error, resetErrorBoundary }: FallbackProps) => {
   // 可以在这里根据不同的业务逻辑处理错误或者上报给日志服务
 
   return (
-    <div className="size-full min-h-520px flex-col-center gap-16px overflow-hidden">
+    <div className="w-full h-full min-h-520px flex-col-center gap-16px overflow-hidden">
       <div className="flex text-400px text-primary">
         <SvgIcon localIcon="error" />
       </div>

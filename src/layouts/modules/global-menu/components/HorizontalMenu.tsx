@@ -41,7 +41,7 @@ const HorizontalMenu: FC<Props> = memo(({ mode }) => {
 
   return (
     <AMenu
-      className="size-full transition-400 border-0!"
+      className="w-full h-full transition duration-300 !border-0"
       inlineIndent={18}
       items={getMenus()}
       mode="horizontal"

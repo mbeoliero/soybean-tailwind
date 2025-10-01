@@ -108,7 +108,7 @@ const VerticalMenu = memo(() => {
   return (
     <SimpleScrollbar>
       <AMenu
-        className="size-full transition-300 border-0!"
+        className="w-full h-full transition duration-300 !border-0"
         inlineCollapsed={isVerticalMix ? false : inlineCollapsed}
         inlineIndent={18}
         items={isMix ? childLevelMenus : allMenus}

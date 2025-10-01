@@ -36,7 +36,7 @@ const Register = () => {
 
   return (
     <>
-      <h3 className="text-lg text-primary font-medium">{t('page.login.register.title')}</h3>
+      <h3 className="text-xl text-primary font-medium">{t('page.login.register.title')}</h3>
       <AForm
         className="pt-6"
         form={form}
@@ -79,7 +79,7 @@ const Register = () => {
         <ASpace
           className="w-full"
           direction="vertical"
-          size={18}
+          size={4}
         >
           <AButton
             block

@@ -1,7 +1,10 @@
 import { PageTab } from '@sa/materials';
-import clsx from 'clsx';
+import { useTranslation } from 'react-i18next';
 
 import BetterScroll from '@/components/BetterScroll';
+import DarkModeContainer from '@/components/DarkModeContainer';
+import FullScreen from '@/components/FullScreen';
+import SvgIcon from '@/components/SvgIcon';
 import { getFullContent, toggleFullContent } from '@/layouts/appStore';
 import { isPC } from '@/utils/agent';
 
@@ -63,7 +66,7 @@ const GlobalTab = () => {
   }
 
   return (
-    <DarkModeContainer className="size-full flex items-center px-4 shadow-tab">
+    <DarkModeContainer className="w-full h-full flex items-center px-4 shadow-lg">
       <div
         className="h-full flex-1 overflow-hidden"
         ref={bsWrapper}
@@ -74,7 +77,7 @@ const GlobalTab = () => {
           onClick={removeFocus}
         >
           <div
-            className={clsx('h-full flex pr-4.5', tabWrapperClass)}
+            className={`h-full flex flex-row pr-4 ${tabWrapperClass}`}
             ref={tabRef}
           >
             {tabs.map((item, index) => (
@@ -86,7 +89,10 @@ const GlobalTab = () => {
                 mode={themeSettings.tab.mode}
                 tabId={item.id}
               >
-                <div id={item.id}>
+                <div
+                  className="flex-shrink-0"
+                  id={item.id}
+                >
                   <PageTab
                     active={item.id === activeTabId}
                     activeColor={themeSettings.themeColor}
@@ -98,7 +104,7 @@ const GlobalTab = () => {
                     mode={themeSettings.tab.mode}
                     prefix={
                       <SvgIcon
-                        className="inline-block align-text-bottom text-4"
+                        className="inline-block align-bottom text-xl"
                         icon={item.icon}
                         localIcon={item.localIcon}
                       />
@@ -114,12 +120,13 @@ const GlobalTab = () => {
         </BetterScroll>
       </div>
 
-      <TabReloadButton />
-
-      <FullScreen
-        full={fullContent}
-        toggleFullscreen={toggleContent}
-      />
+      <div className="flex items-center gap-2">
+        <TabReloadButton />
+        <FullScreen
+          full={fullContent}
+          toggleFullscreen={toggleContent}
+        />
+      </div>
     </DarkModeContainer>
   );
 };

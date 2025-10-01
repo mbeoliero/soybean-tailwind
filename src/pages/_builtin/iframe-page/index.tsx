@@ -16,7 +16,7 @@ const IframePage = () => {
       {url && (
         <div className={loading ? 'h-0' : 'h-full'}>
           <iframe
-            className="size-full"
+            className="w-full h-full"
             id="iframePage"
             src={url}
             onLoad={endLoading}

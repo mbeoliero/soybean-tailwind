@@ -21,7 +21,7 @@ const GlobalSider: FC<Props> = memo(({ headerHeight, inverted, isHorizontalMix, 
 
   return (
     <DarkModeContainer
-      className="size-full flex flex-col shadow-sider"
+      className="w-full h-full flex flex-col shadow-md"
       inverted={darkMenu}
     >
       {showLogo && (

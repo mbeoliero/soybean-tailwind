@@ -7,8 +7,8 @@ type BreadcrumbItem = Required<BreadcrumbProps>['items'][number];
 
 function BreadcrumbContent({ icon, label }: { readonly icon: ReactElement; readonly label: ReactElement }) {
   return (
-    <div className="flex items-center align-middle whitespace-nowrap gap-1">
-      {cloneElement(icon, { className: 'text-gray-500' } as any)}
+    <div className="flex items-center align-middle">
+      {cloneElement(icon, { className: 'mr-1 text-base' } as any)}
       {label}
     </div>
   );

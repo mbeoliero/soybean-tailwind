@@ -28,8 +28,8 @@ const ExceptionBase: FC<Props> = memo(({ type }) => {
   };
 
   return (
-    <div className="size-full min-h-520px flex-col-center gap-24px overflow-hidden">
-      <div className="flex text-400px text-primary">
+    <div className="w-full h-full min-h-[520px] flex flex-col items-center justify-center gap-6 overflow-hidden">
+      <div className="flex text-[400px] text-primary">
         <SvgIcon localIcon={iconMap[type]} />
       </div>
       <AButton
