@@ -1,9 +1,10 @@
+@import './reset.css';
+@import './nprogress.css';
+@layer theme, base, antd, components, utilities;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './reset.css';
-@import './nprogress.css';
 
 html,
 body,
@@ -44,4 +45,10 @@ html.grayscale {
 }
 .dark::view-transition-new(root) {
   z-index: 9999;
+}
+
+/* Fix layout scrolling issue */
+main[id='__SCROLL_EL_ID__'] {
+  max-height: 100% !important;
+  overflow-y: auto !important;
 }

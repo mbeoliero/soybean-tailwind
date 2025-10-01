@@ -78,7 +78,7 @@ const CardItem = (data: CardDataProps) => {
       span={24}
     >
       <div
-        className="flex-1 rd-8px px-16px pb-4px pt-8px text-white"
+        className="flex-1 rounded-8px px-16px pb-4px pt-8px text-white"
         style={{ backgroundImage: getGradientColor(data.color) }}
       >
         <h3 className="text-16px">{data.title}</h3>

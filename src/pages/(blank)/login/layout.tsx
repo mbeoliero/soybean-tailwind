@@ -39,7 +39,7 @@ const LoginLayout = () => {
         className="relative z-40 w-auto rounded-3xl"
         variant="borderless"
       >
-        <div className="w-[100%] sm:w-[75%]">
+        <div className="w-full">
           <Header />
           <main className="pt-6">
             <Outlet />

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ButtonIcon from './ButtonIcon';
 import SvgIcon from './SvgIcon';
 

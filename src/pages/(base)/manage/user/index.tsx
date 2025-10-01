@@ -172,7 +172,7 @@ const UserManage = () => {
     handleEdit(id);
   }
   return (
-    <div className="h-full min-h-125 flex flex-col gap-4 overflow-hidden lt-sm:overflow-auto">
+    <div className="h-full min-h-125 flex flex-col gap-4 overflow-hidden max-sm:overflow-auto">
       <ACollapse
         bordered={false}
         className="card-wrapper"

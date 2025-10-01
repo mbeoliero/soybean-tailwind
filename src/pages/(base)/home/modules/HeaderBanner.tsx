@@ -40,7 +40,7 @@ const HeaderBanner = () => {
           span={24}
         >
           <div className="flex items-center">
-            <div className="w-18 h-18 shrink-0 overflow-hidden rounded-full">
+            <div className="w-[72px] h-[72px] shrink-0 overflow-hidden rounded-full">
               <img
                 className="w-full h-full"
                 src={avatar}
@@ -48,7 +48,7 @@ const HeaderBanner = () => {
             </div>
             <div className="pl-3">
               <h3 className="text-lg font-semibold">{t('page.home.greeting', { userName: userInfo.userName })}</h3>
-              <p className="text-gray-400 leading-7">{t('page.home.weatherDesc')}</p>
+              <p className="text-gray-500 leading-[30px]">{t('page.home.weatherDesc')}</p>
             </div>
           </div>
         </ACol>
@@ -57,10 +57,7 @@ const HeaderBanner = () => {
           md={6}
           span={24}
         >
-          <ASpace
-            className="w-full justify-end"
-            size={24}
-          >
+          <ASpace className="w-full flex justify-end">
             {statisticData.map(item => (
               <AStatistic
                 className="whitespace-nowrap"

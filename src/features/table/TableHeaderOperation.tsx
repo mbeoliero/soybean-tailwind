@@ -39,7 +39,7 @@ const TableHeaderOperation: FC<Props> = ({
     <Space
       wrap
       align={itemAlign}
-      className="lt-sm:w-200px"
+      className="max-sm:w-200px"
     >
       {prefix}
       {children || (

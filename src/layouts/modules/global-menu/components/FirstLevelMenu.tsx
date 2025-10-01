@@ -64,9 +64,9 @@ function MixMenuItem(Props: MixMenuItemProps) {
     <div
       style={{ backgroundColor: active ? selectedBgColor : '' }}
       className={clsx(
-        'mx-4px mb-6px flex-col-center cursor-pointer rounded-8px bg-transparent px-4px py-8px  transition-300 hover:bg-[rgb(0,0,0,0.08)] ',
+        'mx-4px mb-6px flex-col-center cursor-pointer rounded-8px bg-transparent px-4px py-8px transition-all duration-300 hover:bg-[rgb(0,0,0,0.08)]',
         { 'text-primary selected-mix-menu': active },
-        { 'text-white:65 hover:text-white': inverted },
+        { 'text-white/65 hover:text-white': inverted },
         { '!text-white !bg-primary': active && inverted }
       )}
       onClick={handleSelectMixMenu}
@@ -105,7 +105,7 @@ const FirstLevelMenu: FC<Props> = memo(({ children, inverted, onSelect }) => {
       </SimpleScrollbar>
       <MenuToggler
         arrowIcon
-        className={clsx({ 'text-white:88 !hover:text-white': inverted })}
+        className={clsx({ 'text-white/88 !hover:text-white': inverted })}
       />
     </div>
   );

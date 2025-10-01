@@ -28,10 +28,7 @@ const SvgClose: FC<React.ComponentProps<'div'>> = ({ className, onClick, ...prop
 
   return (
     <div
-      className={classNames(
-        ':soy: relative h-16px w-16px inline-flex items-center justify-center rd-50% text-14px',
-        className
-      )}
+      className={classNames('relative h-4 w-4 inline-flex items-center justify-center rounded-full text-sm', className)}
       onTouchEnd={handleTouchEnd}
       onTouchMove={handleTouchMove}
       onTouchStart={handleTouchStart}

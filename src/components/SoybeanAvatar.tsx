@@ -6,7 +6,7 @@ const SoybeanAvatar = ({ className, ...props }: React.ComponentProps<'div'>) => 
   return (
     <div
       {...props}
-      className={clsx('size-72px  overflow-hidden rd-1/2', className)}
+      className={clsx('size-72px overflow-hidden rounded-full', className)}
     >
       <img
         className="w-full h-full"

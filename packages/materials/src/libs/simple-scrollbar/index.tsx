@@ -11,7 +11,7 @@ const SimpleScrollbar = ({
   readonly className?: string;
 }) => {
   return (
-    <div className={classNames('h-full flex-1-hidden', className)}>
+    <div className={classNames('h-full flex-1 overflow-hidden', className)}>
       <SimpleBar className="h-full">{children}</SimpleBar>
     </div>
   );

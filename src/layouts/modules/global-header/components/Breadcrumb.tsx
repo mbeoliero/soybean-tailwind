@@ -1,4 +1,5 @@
 import type { BreadcrumbProps } from 'antd';
+import clsx from 'clsx';
 
 import { useMixMenuContext } from '@/features/menu';
 
@@ -15,6 +16,12 @@ const GlobalBreadcrumb: FC<Omit<BreadcrumbProps, 'items'>> = props => {
     <ABreadcrumb
       {...props}
       items={breadcrumb}
+      className={clsx(
+        // eslint-disable-next-line react/prop-types
+        props.className,
+        '[&_.ant-breadcrumb-overlay-link]:!flex',
+        '[&_.ant-breadcrumb-overlay-link]:!items-center'
+      )}
     />
   );
 };

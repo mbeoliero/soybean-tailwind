@@ -1,8 +1,121 @@
+const plugin = require('tailwindcss/plugin');
+
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}', './packages/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    plugin(function addCustomUtilities({ addUtilities }) {
+      addUtilities({
+        '.absolute-bl': {
+          '@apply absolute left-0 bottom-0': {}
+        },
+        '.absolute-br': {
+          '@apply absolute right-0 bottom-0': {}
+        },
+        '.absolute-center': {
+          '@apply absolute left-0 top-0 flex justify-center items-center w-full h-full': {}
+        },
+        '.absolute-lb': {
+          '@apply absolute left-0 bottom-0': {}
+        },
+        '.absolute-lt': {
+          '@apply absolute left-0 top-0': {}
+        },
+        '.absolute-rb': {
+          '@apply absolute right-0 bottom-0': {}
+        },
+        '.absolute-rt': {
+          '@apply absolute right-0 top-0': {}
+        },
+        '.absolute-tl': {
+          '@apply absolute left-0 top-0': {}
+        },
+        '.absolute-tr': {
+          '@apply absolute right-0 top-0': {}
+        },
+        '.card-wrapper': {
+          '@apply rounded-8px shadow-sm': {}
+        },
+        '.ellipsis-text': {
+          '@apply overflow-hidden whitespace-nowrap text-ellipsis': {}
+        },
+        '.fixed-bl': {
+          '@apply fixed left-0 bottom-0': {}
+        },
+        '.fixed-br': {
+          '@apply fixed right-0 bottom-0': {}
+        },
+        '.fixed-center': {
+          '@apply fixed left-0 top-0 flex justify-center items-center w-full h-full': {}
+        },
+        '.fixed-lb': {
+          '@apply fixed left-0 bottom-0': {}
+        },
+        '.fixed-lt': {
+          '@apply fixed left-0 top-0': {}
+        },
+        '.fixed-rb': {
+          '@apply fixed right-0 bottom-0': {}
+        },
+        '.fixed-rt': {
+          '@apply fixed right-0 top-0': {}
+        },
+        '.fixed-tl': {
+          '@apply fixed left-0 top-0': {}
+        },
+        '.fixed-tr': {
+          '@apply fixed right-0 top-0': {}
+        },
+        '.flex-1-hidden': {
+          '@apply flex-1 overflow-hidden': {}
+        },
+        '.flex-center': {
+          '@apply flex justify-center items-center': {}
+        },
+        '.flex-col-center': {
+          '@apply flex flex-col justify-center items-center': {}
+        },
+        '.flex-col-stretch': {
+          '@apply flex flex-col items-stretch': {}
+        },
+        '.flex-x-center': {
+          '@apply flex justify-center': {}
+        },
+        '.flex-y-center': {
+          '@apply flex items-center': {}
+        },
+        '.i-flex-center': {
+          '@apply inline-flex justify-center items-center': {}
+        },
+        '.i-flex-col': {
+          '@apply inline-flex flex-col': {}
+        },
+        '.i-flex-col-center': {
+          '@apply inline-flex flex-col justify-center items-center': {}
+        },
+        '.i-flex-col-stretch': {
+          '@apply inline-flex flex-col items-stretch': {}
+        },
+        '.i-flex-x-center': {
+          '@apply inline-flex justify-center': {}
+        },
+        '.i-flex-y-center': {
+          '@apply inline-flex items-center': {}
+        },
+        '.nowrap-hidden': {
+          '@apply overflow-hidden whitespace-nowrap': {}
+        },
+        '.transition-all-300': {
+          '@apply transition-all duration-300': {}
+        },
+        '.transition-height-300': {
+          '@apply transition-[height] duration-300': {}
+        }
+      });
+    })
+  ],
   theme: {
     extend: {
       borderRadius: {
@@ -16,8 +129,13 @@ export default {
         tab: '0 1px 2px 0 rgb(0 0 0 / 0.05)'
       },
       colors: {
+        'base-text': 'rgb(var(--base-text-color) / <alpha-value>)',
+        container: 'rgb(var(--container-bg-color) / <alpha-value>)',
         error: 'rgb(var(--error-color) / <alpha-value>)',
         info: 'rgb(var(--info-color) / <alpha-value>)',
+        inverted: 'rgb(var(--inverted-bg-color) / <alpha-value>)',
+        layout: 'rgb(var(--layout-bg-color) / <alpha-value>)',
+        nprogress: 'rgb(var(--nprogress-color) / <alpha-value>)',
         primary: {
           50: 'rgb(var(--primary-color-50) / <alpha-value>)',
           100: 'rgb(var(--primary-color-100) / <alpha-value>)',
@@ -67,6 +185,9 @@ export default {
         '400px': '400px',
         '480px': '480px',
         '520px': '520px'
+      },
+      transitionDuration: {
+        300: '300ms'
       }
     }
   }

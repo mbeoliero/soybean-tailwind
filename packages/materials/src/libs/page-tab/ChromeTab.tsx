@@ -25,7 +25,7 @@ const ChromeTab = ({
       {...tap}
       style={{ ...style }}
       className={classNames(
-        ':soy: relative inline-flex cursor-pointer items-center justify-center gap-16px whitespace-nowrap px-24px py-6px -mr-18px',
+        'relative inline-flex cursor-pointer items-center justify-center gap-4 whitespace-nowrap px-6 py-1.5 -mr-[18px]',
         [
           styles['chrome-tab'],
           { [styles['chrome-tab_dark']]: darkMode },
@@ -37,7 +37,7 @@ const ChromeTab = ({
       onClick={onClick}
     >
       <div
-        className={classNames(':soy: pointer-events-none absolute left-0 top-0 h-full w-full -z-1', [
+        className={classNames('pointer-events-none absolute left-0 top-0 h-full w-full -z-10', [
           styles['chrome-tab__bg']
         ])}
       >
@@ -46,7 +46,7 @@ const ChromeTab = ({
       {prefix}
       {children}
       {suffix}
-      <div className={classNames(':soy: absolute right-7px h-16px w-1px bg-#1f2225', [styles['chrome-tab-divider']])} />
+      <div className={classNames('absolute right-[7px] h-4 w-px bg-[#1f2225]', [styles['chrome-tab-divider']])} />
     </div>
   );
 };

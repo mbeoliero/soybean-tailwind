@@ -3,7 +3,7 @@ import { memo } from 'react';
 // eslint-disable-next-line react/display-name
 const ChromeTabBg = memo(() => {
   return (
-    <svg className="size-full">
+    <svg className="h-full w-full">
       <defs>
         <symbol
           id="geometry-left"

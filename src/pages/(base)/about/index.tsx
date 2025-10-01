@@ -90,12 +90,12 @@ const About = () => {
       size={16}
     >
       <ACard
-        className="card-wrapper"
+        className="p-0 shadow-sm rounded-lg"
         size="small"
         title={t('page.about.title')}
         variant="borderless"
       >
-        <TypingAnimation className="h-13.5 text-xs">{t('page.about.introduction')}</TypingAnimation>
+        <TypingAnimation className="h-14 text-xs">{t('page.about.introduction')}</TypingAnimation>
       </ACard>
 
       {cardInfo.map(HeaderDescription)}
