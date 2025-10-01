@@ -49,7 +49,7 @@ const ThemeDrawer = memo(() => {
       onClose={close}
     >
       <SimpleScrollbar>
-        <div className="overflow-x-hidden px-24px pb-24px pt-8px">
+        <div className="overflow-x-hidden px-6 pb-6 pt-2">
           <ADivider>{t('theme.themeSchema.title')}</ADivider>
           <DarkMode />
           <ADivider>{t('theme.layoutMode.title')}</ADivider>

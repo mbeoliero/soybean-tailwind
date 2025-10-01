@@ -8,8 +8,7 @@ export default defineConfig(
       singleAttributePerLine: true,
       trailingCommas: 'none'
     },
-    react: true,
-    unocss: true
+    react: true
   },
   sort.configs['flat/recommended'],
   {

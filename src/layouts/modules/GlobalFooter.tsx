@@ -2,7 +2,7 @@ import DarkModeContainer from '@/components/DarkModeContainer';
 
 const GlobalFooter = () => {
   return (
-    <DarkModeContainer className="h-full flex-center">
+    <DarkModeContainer className="h-full flex items-center justify-center">
       <a
         href="https://github.com/honghuangdc/soybean-admin/blob/main/LICENSE"
         rel="noopener noreferrer"

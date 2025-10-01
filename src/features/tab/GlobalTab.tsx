@@ -63,9 +63,9 @@ const GlobalTab = () => {
   }
 
   return (
-    <DarkModeContainer className="size-full flex-y-center px-16px shadow-tab">
+    <DarkModeContainer className="size-full flex items-center px-4 shadow-tab">
       <div
-        className="h-full flex-1-hidden"
+        className="h-full flex-1 overflow-hidden"
         ref={bsWrapper}
       >
         <BetterScroll
@@ -74,7 +74,7 @@ const GlobalTab = () => {
           onClick={removeFocus}
         >
           <div
-            className={clsx('h-full flex pr-18px', tabWrapperClass)}
+            className={clsx('h-full flex pr-4.5', tabWrapperClass)}
             ref={tabRef}
           >
             {tabs.map((item, index) => (
@@ -98,14 +98,14 @@ const GlobalTab = () => {
                     mode={themeSettings.tab.mode}
                     prefix={
                       <SvgIcon
-                        className="inline-block align-text-bottom text-16px"
+                        className="inline-block align-text-bottom text-4"
                         icon={item.icon}
                         localIcon={item.localIcon}
                       />
                     }
                     onClick={() => handleClickTab(item)}
                   >
-                    <div className="max-w-240px ellipsis-text">{item.i18nKey ? t(item.i18nKey) : item.label}</div>
+                    <div className="max-w-60 truncate">{item.i18nKey ? t(item.i18nKey) : item.label}</div>
                   </PageTab>
                 </div>
               </ContextMenu>

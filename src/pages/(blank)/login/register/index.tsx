@@ -36,9 +36,9 @@ const Register = () => {
 
   return (
     <>
-      <h3 className="text-18px text-primary font-medium">{t('page.login.register.title')}</h3>
+      <h3 className="text-lg text-primary font-medium">{t('page.login.register.title')}</h3>
       <AForm
-        className="pt-24px"
+        className="pt-6"
         form={form}
         onFinish={handleSubmit}
       >
@@ -52,7 +52,7 @@ const Register = () => {
           name="code"
           rules={formRules.code}
         >
-          <div className="w-full flex-y-center gap-16px">
+          <div className="w-full flex items-center gap-4">
             <AInput placeholder={t('page.login.common.codePlaceholder')} />
             <AButton
               disabled={isCounting}

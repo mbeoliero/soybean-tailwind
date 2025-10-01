@@ -123,18 +123,7 @@ export const BaseChildrenRoutes = [
         lazy: () => import('@/pages/_builtin/iframe-page').then(convert),
         path: '/document/project-link'
       },
-      {
-        handle: {
-          i18nKey: 'route.document_unocss',
-          icon: 'logos:unocss',
-          order: 5,
-          title: 'document_unocss',
-          url: 'https://unocss.dev/'
-        },
-        id: 'document_unocss',
-        lazy: () => import('@/pages/_builtin/iframe-page').then(convert),
-        path: '/document/unocss'
-      },
+
       {
         handle: {
           i18nKey: 'route.document_vite',

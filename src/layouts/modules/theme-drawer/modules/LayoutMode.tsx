@@ -65,7 +65,7 @@ const LayoutMode = memo(() => {
       />
 
       <SettingItem
-        className="mt-16px"
+        className="mt-4"
         label={t('theme.layoutMode.reverseHorizontalMix')}
         show={themeSettings.layout.mode === 'horizontal-mix'}
       >

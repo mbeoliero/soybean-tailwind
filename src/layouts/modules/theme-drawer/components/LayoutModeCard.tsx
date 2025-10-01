@@ -60,12 +60,12 @@ const LayoutModeCard: FC<Props> = ({ mode, ...rest }: Props) => {
   }
 
   return (
-    <div className="flex-center flex-wrap gap-x-32px gap-y-16px">
+    <div className="flex items-center justify-center flex-wrap gap-x-8 gap-y-4">
       {Object.entries(LAYOUT_CONFIG).map(([key, item]) => (
         <div
           key={key}
           className={clsx(
-            'flex cursor-pointer border-2px rounded-6px hover:border-primary',
+            'flex cursor-pointer border-2 rounded hover:border-primary',
             mode === key ? 'border-primary' : 'border-transparent'
           )}
           onClick={() => handleChangeMode(key as UnionKey.ThemeLayoutMode)}
@@ -76,7 +76,7 @@ const LayoutModeCard: FC<Props> = ({ mode, ...rest }: Props) => {
           >
             <div
               className={clsx(
-                'h-64px w-96px gap-6px rd-4px p-6px shadow dark:shadow-coolGray-5',
+                'h-16 w-24 gap-1.5 rounded p-1.5 shadow dark:shadow-gray-500',
                 key.includes('vertical') ? 'flex' : 'flex-col'
               )}
             >

@@ -54,11 +54,11 @@ const MenuAuthModal: FC<ModulesProps> = memo(({ onClose, open, roleId }) => {
 
   return (
     <AModal
-      className="w-480px"
+      className="w-120"
       open={open}
       title={title}
       footer={
-        <ASpace className="mt-16px">
+        <ASpace className="mt-4">
           <AButton
             size="small"
             onClick={onClose}
@@ -76,18 +76,18 @@ const MenuAuthModal: FC<ModulesProps> = memo(({ onClose, open, roleId }) => {
       }
       onCancel={onClose}
     >
-      <div className="flex-y-center gap-16px pb-12px">
+      <div className="flex items-center gap-4 pb-3">
         <div>{t('page.manage.menu.home')}</div>
 
         <ASelect
-          className="w-240px"
+          className="w-60"
           options={data}
           value={home}
           onChange={setHome}
         />
       </div>
 
-      <SimpleScrollbar className="!h-270px">
+      <SimpleScrollbar className="!h-67.5">
         <ATree
           multiple
           checkStrictly={false}

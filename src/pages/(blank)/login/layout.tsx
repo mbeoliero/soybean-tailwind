@@ -30,18 +30,18 @@ const LoginLayout = () => {
 
   return (
     <div
-      className="relative size-full flex-center overflow-hidden bg-layout"
+      className="relative size-full flex items-center justify-center overflow-hidden bg-layout"
       style={{ backgroundColor: bgColor }}
     >
       <WaveBg themeColor={bgThemeColor} />
 
       <ACard
-        className="relative z-4 w-auto rd-12px"
+        className="relative z-40 w-auto rounded-3xl"
         variant="borderless"
       >
-        <div className="w-400px lt-sm:w-300px">
+        <div className="w-100 sm:w-75">
           <Header />
-          <main className="pt-24px">
+          <main className="pt-6">
             <Outlet />
           </main>
         </div>

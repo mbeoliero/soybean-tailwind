@@ -74,9 +74,9 @@ const PwdLogin = () => {
 
   return (
     <>
-      <h3 className="text-18px text-primary font-medium">{t('page.login.pwdLogin.title')}</h3>
+      <h3 className="text-lg text-primary font-medium">{t('page.login.pwdLogin.title')}</h3>
       <AForm
-        className="pt-24px"
+        className="pt-6"
         form={form}
         initialValues={INITIAL_VALUES}
         onFinish={toLogin}
@@ -99,7 +99,7 @@ const PwdLogin = () => {
           direction="vertical"
           size={24}
         >
-          <div className="flex-y-center justify-between">
+          <div className="flex items-center justify-between">
             <ACheckbox>{t('page.login.pwdLogin.rememberMe')}</ACheckbox>
 
             <AButton
@@ -119,7 +119,7 @@ const PwdLogin = () => {
           >
             {t('common.confirm')}
           </AButton>
-          <div className="flex-y-center justify-between gap-12px">
+          <div className="flex items-center justify-between gap-3">
             <AButton
               block
               className="flex-1"
@@ -135,8 +135,8 @@ const PwdLogin = () => {
               {t(loginModuleRecord.register)}
             </AButton>
           </div>
-          <ADivider className="!m-0 !text-14px !text-#666">{t('page.login.pwdLogin.otherAccountLogin')}</ADivider>
-          <div className="flex-center gap-12px">
+          <ADivider className="!m-0 !text-sm !text-gray-600">{t('page.login.pwdLogin.otherAccountLogin')}</ADivider>
+          <div className="flex items-center justify-center gap-3">
             {accounts.map(item => {
               return (
                 <AButton

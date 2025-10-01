@@ -15,7 +15,7 @@ export function setupElegantRouter() {
         'document_project-link',
         'document_react',
         'document_vite',
-        'document_unocss',
+
         'document_proComponents',
         'document_antd',
         'document_ui'

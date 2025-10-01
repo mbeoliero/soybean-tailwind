@@ -33,7 +33,7 @@ const PageFun = memo(() => {
   const isVertical = layoutMode === 'vertical';
 
   return (
-    <div className="relative flex-col-stretch gap-12px">
+    <div className="relative flex flex-col gap-3">
       <SettingItem label={t('theme.scrollMode.title')}>
         <Select
           className="w-120px"

@@ -1,3 +1,4 @@
+import { SimpleScrollbar } from '@sa/materials';
 import type { DataNode } from 'antd/es/tree';
 
 import type { ModulesProps } from './type';
@@ -53,11 +54,11 @@ const ButtonAuthModal: FC<ModulesProps> = memo(({ onClose, open, roleId }) => {
 
   return (
     <AModal
-      className="w-480px"
+      className="w-120"
       open={open}
       title={title}
       footer={
-        <ASpace className="mt-16px">
+        <ASpace className="mt-4">
           <AButton
             size="small"
             onClick={onClose}
@@ -75,14 +76,15 @@ const ButtonAuthModal: FC<ModulesProps> = memo(({ onClose, open, roleId }) => {
       }
       onCancel={onClose}
     >
-      <ATree
-        checkable
-        checkedKeys={checks}
-        className="h-280px"
-        height={280}
-        treeData={tree}
-        onCheck={value => setChecks(value as number[])}
-      />
+      <SimpleScrollbar className="h-70">
+        <ATree
+          checkable
+          checkedKeys={checks}
+          height={280}
+          treeData={tree}
+          onCheck={value => setChecks(value as number[])}
+        />
+      </SimpleScrollbar>
     </AModal>
   );
 });

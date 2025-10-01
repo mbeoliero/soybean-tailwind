@@ -21,7 +21,7 @@ const GlobalSider: FC<Props> = memo(({ headerHeight, inverted, isHorizontalMix, 
 
   return (
     <DarkModeContainer
-      className="size-full flex-col-stretch shadow-sider"
+      className="size-full flex flex-col shadow-sider"
       inverted={darkMenu}
     >
       {showLogo && (
@@ -31,7 +31,7 @@ const GlobalSider: FC<Props> = memo(({ headerHeight, inverted, isHorizontalMix, 
         />
       )}
       <div
-        className={showLogo ? 'flex-1-hidden' : 'h-full'}
+        className={showLogo ? 'flex-1 overflow-hidden' : 'h-full'}
         id={GLOBAL_SIDER_MENU_ID}
       />
     </DarkModeContainer>

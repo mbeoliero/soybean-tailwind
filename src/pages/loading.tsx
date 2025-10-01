@@ -1,4 +1,3 @@
-// @unocss-include
 import { getRgb } from '@sa/color';
 import clsx from 'clsx';
 
@@ -20,14 +19,14 @@ const GlobalLoading = memo(() => {
 
   const loadingClasses = [
     'left-0 top-0',
-    'left-0 bottom-0 animate-delay-500',
-    'right-0 top-0 animate-delay-1000',
-    'right-0 bottom-0 animate-delay-1500'
+    'left-0 bottom-0 delay-500',
+    'right-0 top-0 delay-1000',
+    'right-0 bottom-0 delay-1500'
   ];
 
   return (
     <div
-      className="fixed-center flex-col bg-layout"
+      className="fixed inset-0 flex flex-col items-center justify-center bg-layout"
       style={{ '--primary-color': `${r} ${g} ${b}` } as React.CSSProperties}
     >
       <SystemLogo className="size-128px text-primary" />
@@ -36,14 +35,14 @@ const GlobalLoading = memo(() => {
           {loadingClasses.map(item => {
             return (
               <div
-                className={clsx('absolute w-16px h-16px bg-primary rounded-8px animate-pulse ', item)}
+                className={clsx('absolute w-16px h-16px bg-primary rounded-8px animate-pulse', item)}
                 key={item}
               />
             );
           })}
         </div>
       </div>
-      <h2 className="text-28px text-primary font-500">{t('system.title')}</h2>
+      <h2 className="text-28px text-primary font-medium">{t('system.title')}</h2>
     </div>
   );
 });

@@ -50,38 +50,49 @@ const GlobalHeader: FC<Props> = memo(({ isMobile, mode, reverse, siderWidth }) =
   const showToggler = reverse ? true : showMenuToggler;
 
   return (
-    <DarkModeContainer className="h-full flex-y-center px-12px shadow-header">
+    <DarkModeContainer className="h-full flex items-center px-3 shadow-header">
       {showLogo && (
         <GlobalLogo
           className="h-full"
           style={{ width: `${siderWidth}px` }}
         />
       )}
-      <div>{reverse ? true : showMenuToggler}</div>
 
       {showToggler && <MenuToggler />}
 
       <div
-        className="h-full flex-y-center flex-1-hidden"
+        className="h-full flex items-center flex-1 overflow-hidden"
         id={GLOBAL_HEADER_MENU_ID}
       >
-        {!isMobile && !showMenu && <GlobalBreadcrumb className="ml-12px" />}
+        {!isMobile && !showMenu && (
+          <div className="bg-container text-base-text transition-300 size-full flex-y-center px-16px shadow-tab">
+            <div className="h-full flex-1-hidden">
+              <div className="h-full text-left">
+                <div className="inline-block h-full">
+                  <div className="h-full flex pr-18px items-end">
+                    <GlobalBreadcrumb className="ml-3 flex-nowrap whitespace-nowrap overflow-hidden" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
 
-      <div className="h-full flex-y-center justify-end">
+      <div className="h-full flex items-center justify-end">
         <GlobalSearch />
 
         {!isMobile && (
           <FullScreen
-            className="px-12px"
+            className="px-3"
             full={isFullscreen}
             toggleFullscreen={toggleFullscreen}
           />
         )}
 
-        <LangSwitch className="px-12px" />
+        <LangSwitch className="px-3" />
 
-        <ThemeSchemaSwitch className="px-12px" />
+        <ThemeSchemaSwitch className="px-3" />
 
         <ThemeButton />
 

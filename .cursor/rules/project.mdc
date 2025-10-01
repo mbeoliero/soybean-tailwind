@@ -19,7 +19,7 @@ alwaysApply: true
 - 基于 React 18 + TypeScript + Vite 的后台管理系统
 - 采用 pnpm monorepo 架构
 - 使用文件系统路由，类似 Next.js 的路由系统
-- 技术栈：React、TypeScript、Vite、Redux Toolkit、Antd、UnoCSS
+- 技术栈：React、TypeScript、Vite、Redux Toolkit、Antd、Tailwind CSS
 - 代码风格遵循 SoybeanJS 官方规范
 
 ## 编码规范
@@ -45,7 +45,7 @@ alwaysApply: true
 
 ### 2. 响应式设计优先
 - 所有组件必须考虑移动端适配
-- 使用 UnoCSS 进行样式开发
+- 使用 Tailwind CSS 进行样式开发
 - 遵循移动端优先的设计理念
 
 ### 3. 性能优化
@@ -96,7 +96,7 @@ alwaysApply: true
 
 ### 4. 样式类命名
 
-- 使用 Tailwind CSS + UnoCSS 配合，避免直接写原生 CSS。
+- 使用 Tailwind CSS 进行样式开发，避免直接写原生 CSS。
 - 原则：能用类写完的 UI 不新建样式文件。
 - `class` 顺序遵循结构 > 状态 > 修饰。
 - 尽量通过 `theme` 和 `preset` 控制色彩与间距。

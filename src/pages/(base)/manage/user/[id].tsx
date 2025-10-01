@@ -41,9 +41,8 @@ const Component = () => {
         bordered
         items={items}
       />
-      <div className="mt-16px text-center text-18px">{t('page.manage.userDetail.explain')}</div>
-
-      <div className="mt-16px text-center text-18px">{t('page.manage.userDetail.content')}</div>
+      <div className="mt-4 text-center text-lg">{t('page.manage.userDetail.explain')}</div>
+      <div className="mt-4 text-center text-lg">{t('page.manage.userDetail.content')}</div>
     </ACard>
   );
 };

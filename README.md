@@ -20,7 +20,7 @@
 [`React SoybeanAdmin`](https://github.com/soybeanjs/soybean-admin-react) 是一个基于 React19 技术栈的清新优雅中后台模版。项目采用了最新的前端技术栈:
 
 - 🚀 React 19 + ReactRouter V7 + Redux/toolkit
-- 🎨 Ant Design + UnoCSS
+- 🎨 Ant Design + Tailwind CSS
 - 📦 Vite 6 + TypeScript
 - 🔐 基于角色的权限管理
 - 📱 移动端适配

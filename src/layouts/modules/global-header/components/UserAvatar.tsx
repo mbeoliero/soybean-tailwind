@@ -40,9 +40,9 @@ const UserAvatar = memo(() => {
     {
       key: '0',
       label: (
-        <div className="flex-center gap-8px">
+        <div className="flex items-center justify-center gap-2">
           <SvgIcon
-            className="text-icon"
+            className="text-gray-500"
             icon="ph:user-circle"
           />
           {t('common.userCenter')}
@@ -55,9 +55,9 @@ const UserAvatar = memo(() => {
     {
       key: '1',
       label: (
-        <div className="flex-center gap-8px">
+        <div className="flex items-center justify-center gap-2">
           <SvgIcon
-            className="text-icon"
+            className="text-gray-500"
             icon="ph:sign-out"
           />
           {t('common.logout')}
@@ -72,13 +72,13 @@ const UserAvatar = memo(() => {
       placement="bottomRight"
       trigger={['click']}
     >
-      <div>
-        <ButtonIcon className="px-12px">
+      <div className="flex items-center gap-2">
+        <ButtonIcon className="px-3">
           <SvgIcon
-            className="text-icon-large"
+            className="text-gray-500"
             icon="ph:user-circle"
           />
-          <span className="text-16px font-medium">{userInfo.userName}</span>
+          <span className="text-4 font-medium">{userInfo.userName}</span>
         </ButtonIcon>
       </div>
     </ADropdown>

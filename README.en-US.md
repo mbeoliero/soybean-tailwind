@@ -20,7 +20,7 @@ This project is based on the outstanding open-source project [Soybean Admin](htt
 [`React SoybeanAdmin`](https://github.com/mufeng889/react-soybean-admin) is a fresh and elegant admin panel template built on the React19 stack. It adopts the latest frontend technologies, including:
 
 - 🚀 React 19 + ReactRouter V7 + Redux/toolkit
-- 🎨 Ant Design + UnoCSS
+- 🎨 Ant Design + Tailwind CSS
 - 📦 Vite 6 + TypeScript
 - 🔐 Role-based access control
 - 📱 Mobile-friendly adaptation

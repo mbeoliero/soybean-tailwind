@@ -15,14 +15,14 @@ const SearchResult: FC<Props> = memo(({ active, enter, menu, setActiveRouteName 
   return (
     <div
       className={clsx(
-        'mt-8px h-56px flex-y-center cursor-pointer justify-between rounded-4px bg-#e5e7eb  px-14px dark:bg-dark',
+        'mt-2 h-14 flex items-center cursor-pointer justify-between rounded px-3.5 bg-gray-200 dark:bg-gray-800',
         { 'bg-primary': active },
-        { 'text-#fff': active }
+        { 'text-white': active }
       )}
       onClick={enter}
       onMouseEnter={handleMouseEnter}
     >
-      <span className="ml-5px flex-1">
+      <span className="ml-1.25 flex-1">
         {menu.icon}
         {menu.label}
       </span>

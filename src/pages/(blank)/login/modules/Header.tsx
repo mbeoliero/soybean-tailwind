@@ -7,17 +7,17 @@ const Header = memo(() => {
   const { t } = useTranslation();
 
   return (
-    <header className="flex-y-center justify-between">
-      <SystemLogo className="h-64px w-64px text-primary lt-sm:h-48px lt-sm:w-48px" />
+    <header className="flex items-center justify-between">
+      <SystemLogo className="h-16 w-16 text-primary sm:h-12 sm:w-12" />
 
       <FlipText
-        className="text-28px text-primary font-500 lt-sm:text-22px"
+        className="text-7xl text-primary font-medium sm:text-5xl"
         word={t('system.title')}
       />
 
-      <div className="i-flex-col">
+      <div className="flex flex-col">
         <ThemeSchemaSwitch
-          className="text-20px lt-sm:text-18px"
+          className="text-xl sm:text-lg"
           showTooltip={false}
         />
         <LangSwitch showTooltip={false} />

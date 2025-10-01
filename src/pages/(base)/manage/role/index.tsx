@@ -73,7 +73,7 @@ const Role = () => {
         align: 'center',
         key: 'operate',
         render: (_, record) => (
-          <div className="flex-center gap-8px">
+          <div className="flex items-center justify-center gap-2">
             <AButton
               ghost
               size="small"
@@ -144,7 +144,7 @@ const Role = () => {
   }
 
   return (
-    <div className="h-full min-h-500px flex-col-stretch gap-16px overflow-hidden lt-sm:overflow-auto">
+    <div className="h-full min-h-125 flex flex-col gap-4 overflow-hidden lt-sm:overflow-auto">
       <ACollapse
         bordered={false}
         className="card-wrapper"
@@ -159,7 +159,7 @@ const Role = () => {
       />
 
       <ACard
-        className="flex-col-stretch sm:flex-1-hidden card-wrapper"
+        className="flex flex-col sm:flex-1 card-wrapper"
         ref={tableWrapperRef}
         title={t('page.manage.role.title')}
         variant="borderless"

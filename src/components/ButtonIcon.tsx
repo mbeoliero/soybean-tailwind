@@ -65,7 +65,7 @@ const ButtonIcon = ({
         type="text"
         {...rest}
       >
-        <div className="flex-center gap-8px">
+        <div className="flex items-center justify-center gap-2">
           {children || (
             <SvgIcon
               icon={icon}

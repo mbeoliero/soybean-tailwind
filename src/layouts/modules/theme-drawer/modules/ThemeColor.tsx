@@ -20,15 +20,15 @@ const ThemeColor = () => {
   }
 
   return (
-    <div className="flex-col-stretch gap-12px">
+    <div className="flex flex-col gap-3">
       <Tooltip
         placement="topLeft"
         title={
           <p>
-            <span className="pr-12px">{t('theme.recommendColorDesc')}</span>
+            <span className="pr-3">{t('theme.recommendColorDesc')}</span>
             <br />
             <Button
-              className="text-gray"
+              className="text-gray-500"
               href="https://uicolors.app/create"
               rel="noopener noreferrer"
               target="_blank"

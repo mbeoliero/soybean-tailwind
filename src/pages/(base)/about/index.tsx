@@ -95,7 +95,7 @@ const About = () => {
         title={t('page.about.title')}
         variant="borderless"
       >
-        <TypingAnimation className="h-54px text-12px">{t('page.about.introduction')}</TypingAnimation>
+        <TypingAnimation className="h-13.5 text-xs">{t('page.about.introduction')}</TypingAnimation>
       </ACard>
 
       {cardInfo.map(HeaderDescription)}

@@ -29,8 +29,8 @@ const DarkMode = () => {
     dispatch(setIsOnlyExpandCurrentParentMenu(value));
   }
   return (
-    <div className="flex-col-stretch gap-16px">
-      <div className="i-flex-center">
+    <div className="flex flex-col gap-4">
+      <div className="flex items-center justify-center">
         <ThemeSchemaSegmented />
       </div>
 

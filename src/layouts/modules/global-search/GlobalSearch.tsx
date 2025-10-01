@@ -11,7 +11,7 @@ const GlobalSearch = memo(() => {
   return (
     <>
       <ButtonIcon
-        className="px-12px"
+        className="px-3"
         tooltipContent={t('common.search')}
         onClick={toggle}
       >

@@ -10,8 +10,8 @@ const WaveBg = ({ themeColor }: Props) => {
   const darkColor = getPaletteColorByNumber(themeColor, 500);
 
   return (
-    <div className="absolute-lt z-1 size-full overflow-hidden">
-      <div className="absolute -right-300px -top-900px lt-sm:(-right-100px -top-1170px)">
+    <div className="absolute left-0 top-0 z-10 size-full overflow-hidden">
+      <div className="absolute -right-300px -top-900px sm:(-right-100px -top-1170px)">
         <svg
           height="1337"
           width="1337"
@@ -51,7 +51,7 @@ const WaveBg = ({ themeColor }: Props) => {
           </g>
         </svg>
       </div>
-      <div className="absolute -bottom-400px -left-200px lt-sm:(-bottom-760px -left-100px)">
+      <div className="absolute -bottom-400px -left-200px sm:(-bottom-760px -left-100px)">
         <svg
           height="896"
           width="967.8852157128662"

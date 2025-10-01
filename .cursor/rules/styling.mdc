@@ -6,8 +6,8 @@ alwaysApply: false
 
 # 样式开发规范
 
-## 1. UnoCSS 使用规范
-- 优先使用 UnoCSS 原子类
+## 1. Tailwind CSS 使用规范
+- 优先使用 Tailwind CSS 原子类
 - 复杂布局使用 CSS Modules
 - 响应式设计使用断点前缀
 ```typescript

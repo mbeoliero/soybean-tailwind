@@ -1,19 +1,29 @@
 .layout-header {
-  --uno: h-16px bg-primary rd-4px;
+  height: 4rem;
+  background-color: var(--primary-color);
+  border-radius: 0.25rem;
 }
 
 .layout-sider {
-  --uno: bg-primary-300 rd-4px;
+  background-color: var(--primary-color-300);
+  border-radius: 0.25rem;
 }
 
 .layout-main {
-  --uno: flex-1 bg-primary-200 rd-4px;
+  flex: 1;
+  background-color: var(--primary-color-200);
+  border-radius: 0.25rem;
 }
 
 .vertical-wrapper {
-  --uno: flex-1 flex-col gap-6px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
 }
 
 .horizontal-wrapper {
-  --uno: flex-1 flex gap-6px;
+  flex: 1;
+  display: flex;
+  gap: 0.375rem;
 }
