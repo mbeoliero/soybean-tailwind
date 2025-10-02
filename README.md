@@ -11,16 +11,27 @@
 > [!NOTE]
 > 如果您觉得 `React SoybeanAdmin` 对您有所帮助，或者您喜欢我们的项目，请在 GitHub 上给我们一个 ⭐️。您的支持是我们持续改进和增加新功能的动力！感谢您的支持！
 
+## 项目说明
+
+本项目 fork 自 [soybean-admin-react](https://github.com/soybeanjs/soybean-admin-react)，是基于 React 版本将 UnoCSS 改造成 Tailwind CSS 的版本。
+
+**项目地址:** [https://github.com/mbeoliero/soybean-react-tailwind](https://github.com/mbeoliero/soybean-react-tailwind)
+
 ## 特别鸣谢
 
-本项目是基于 [Soybean](https://github.com/honghuangdc) 开发的优秀开源项目 [Soybean Admin](https://github.com/soybeanjs/soybean-admin) 的 React 版本实现。在此特别感谢 Soybean 的开源贡献,为中后台开发提供了优秀的解决方案。如果您喜欢本项目,也请给原作者的 [Soybean Admin](https://github.com/soybeanjs/soybean-admin) 点个 star ⭐️。
+特别感谢以下开源项目：
+
+- [Soybean Admin](https://github.com/soybeanjs/soybean-admin) - 由 [Soybean](https://github.com/honghuangdc) 开发的优秀开源项目，为中后台开发提供了卓越的解决方案
+- [soybean-admin-react](https://github.com/soybeanjs/soybean-admin-react) - Soybean Admin 的 React 版本实现，本项目基于此进行 Tailwind CSS 改造
+
+如果您喜欢本项目，也请给原项目点个 star ⭐️。
 
 ## 简介
 
-[`React SoybeanAdmin`](https://github.com/soybeanjs/soybean-admin-react) 是一个基于 React19 技术栈的清新优雅中后台模版。项目采用了最新的前端技术栈:
+[`React SoybeanAdmin Tailwind`](https://github.com/mbeoliero/soybean-react-tailwind) 是一个基于 React19 技术栈的清新优雅中后台模版。项目采用了最新的前端技术栈:
 
 - 🚀 React 19 + ReactRouter V7 + Redux/toolkit
-- 🎨 Ant Design + Tailwind CSS
+- 🎨 Ant Design + Tailwind CSS (由 UnoCSS 改造而来)
 - 📦 Vite 6 + TypeScript
 - 🔐 基于角色的权限管理
 - 📱 移动端适配
@@ -44,10 +55,8 @@
 
 ## 分支
 
-- `master` 分支: 最新稳定版本,基于 React19 + ReactRouter V7  版本
-- `v18-router6` 分支: 基于 React18 + ReactRouter V6 版本
-
-有问题都是会进行修复,如果需要使用旧版本,请切换到对应分支。 v18-router6 在未来3-5年依然会是市面上较为先进 功能强大的版本
+- `master` 分支: 完整的 React19 + ReactRouter V7 版本，包含所有功能和页面
+- `simple` 分支: 精简版本，去除不需要的页面，只保留首页和列表管理页
 
 ## 版本
 
