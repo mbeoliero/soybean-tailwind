@@ -11,16 +11,27 @@
 > [!NOTE]
 > If you find `React SoybeanAdmin` helpful or like our project, please give us a ⭐️ on GitHub. Your support motivates us to keep improving and adding new features! Thank you for your support!
 
+## About This Project
+
+This project is forked from [soybean-admin-react](https://github.com/soybeanjs/soybean-admin-react), migrating from UnoCSS to Tailwind CSS while maintaining the React-based implementation.
+
+**Project Repository:** [https://github.com/mbeoliero/soybean-react-tailwind](https://github.com/mbeoliero/soybean-react-tailwind)
+
 ## Special Thanks
 
-This project is based on the outstanding open-source project [Soybean Admin](https://github.com/soybeanjs/soybean-admin), developed by [Soybean](https://github.com/honghuangdc). It is a React implementation of the original project. Special thanks to Soybean for their contributions to open source and for providing an excellent solution for admin panel development. If you like this project, please also give a ⭐️ to the original [Soybean Admin](https://github.com/soybeanjs/soybean-admin).
+Special thanks to the following open-source projects:
+
+- [Soybean Admin](https://github.com/soybeanjs/soybean-admin) - An outstanding open-source project developed by [Soybean](https://github.com/honghuangdc), providing an excellent solution for admin panel development
+- [soybean-admin-react](https://github.com/soybeanjs/soybean-admin-react) - The React implementation of Soybean Admin, which this project is based on for the Tailwind CSS migration
+
+If you like this project, please also give a ⭐️ to the original projects.
 
 ## Introduction
 
-[`React SoybeanAdmin`](https://github.com/mufeng889/react-soybean-admin) is a fresh and elegant admin panel template built on the React19 stack. It adopts the latest frontend technologies, including:
+[`React SoybeanAdmin Tailwind`](https://github.com/mbeoliero/soybean-react-tailwind) is a fresh and elegant admin panel template built on the React19 stack. It adopts the latest frontend technologies, including:
 
 - 🚀 React 19 + ReactRouter V7 + Redux/toolkit
-- 🎨 Ant Design + Tailwind CSS
+- 🎨 Ant Design + Tailwind CSS (migrated from UnoCSS)
 - 📦 Vite 6 + TypeScript
 - 🔐 Role-based access control
 - 📱 Mobile-friendly adaptation
@@ -44,10 +55,8 @@ Whether you're learning the latest frontend technologies or developing enterpris
 
 ## Branches
 
-- **`master` branch**: Latest stable version, based on React19 + ReactRouter V7.
-- **`v18-router6` branch**: Legacy version, based on React18 + ReactRouter V6.
-
-Both branches will continue to receive bug fixes. If you need the older version, switch to the appropriate branch. The `v18-router6` branch will remain advanced and feature-rich for 3-5 years.
+- **`master` branch**: Full-featured version based on React19 + ReactRouter V7, includes all functionalities and pages
+- **`simple` branch**: Simplified version with minimal pages, only includes homepage and list manage page
 
 ## Versions
 
